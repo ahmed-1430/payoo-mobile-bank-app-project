@@ -124,7 +124,7 @@
                 <button id="transfer-money-btn" class="btn btn-primary mt-5 w-full rounded-3xl bg-[#0874F2] border-none text-white text-[1.25rem] font-semibold">Send Now</button>
             </form>
         </div>
-        <div>
+        <div class="mt-[31.5px] ml-[24px]">
             <h2 class="text-[1.125rem] font-semibold ml-2 mb-3">Get Bonous</h2>
              <form action="" class="bg-white rounded-xl mr-[24px] p-[24px]">
                 <div>
@@ -133,6 +133,82 @@
                 </div>                
                 <button id="bonous-btn" class="btn btn-primary mt-5 w-full rounded-3xl bg-[#0874F2] border-none text-white text-[1.25rem] font-semibold">Get Bonous</button>
             </form>            
+        </div>
+        <div class="mt-[31.5px] ml-[24px]">
+            <h2 class="text-[1.125rem] font-semibold ml-2 mb-3">Pay Bill</h2>
+            <form action="" class="bg-white rounded-xl mr-[24px] p-[24px] ">
+                <div>
+                    <h2>Select To pay</h2>
+                    <select id="paybill-select-bank" class="select w-full rounded-3xl bg-[#F4F5F7] mb-3">
+                        <option disabled selected>Select Category</option>
+                        <option>Electricity</option>
+                        <option>Gas</option>
+                        <option>Water</option>
+                        <option>Internet</option>
+                        <option>Telephone</option>
+                        <option>TV</option>
+                        <option>Credit Card</option>
+                        <option>Govt. Fees</option>
+                        <option>Insurance</option>
+                        <option>Tracker</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Biller Account Number</h2>
+                     <input id="biller-account-number" type="text" placeholder="Enter Account Number" class="no-spinner input rounded-3xl w-full bg-[#F4F5F7] mb-3"/>
+                </div>
+                <div>
+                    <label for="">Amount to Pay</label>                    
+                     <input id="add-amount" type="text" placeholder="Add amount to Pay" class="no-spinner input rounded-3xl w-full bg-[#F4F5F7] mb-3" />
+                </div>
+                <div>                    
+                    <label for="">Pin Number</label>
+                     <input id="bill-pin" type="text" placeholder="Enter 4 Digit Pin" class="no-spinner input rounded-3xl w-full bg-[#f4f5f7] mb-3" id="" />
+                </div>
+                <button id="bill-btn" class="btn btn-primary mt-5 w-full rounded-3xl bg-[#0874F2] border-none text-white text-[1.25rem] font-semibold">Pay Now</button>
+            </form>
+        </div>
+        <div class="mt-[31.5px] ml-[24px] mr-[24px]">
+           <div class="flex justify-between">
+             <h2 class="text-[1.125rem] font-semibold ml-2 mb-3">Transaction History</h2>
+            <p class="text-[#08080850] mr-2"><a href="#">View All</a></p>
+           </div>
+           <div>
+            <div class="flex items-center bg-white pt-[13px] pb-[13px] pl-[16px] gap-5 rounded-[12px] border-2 border-[#08080810]">
+                <div class="bg-[#08080810] rounded-full p-[10px]"><img src="assets/wallet1.png" alt="" class="h-[23.5px] w-[23.5px]"></div>                
+                <div>
+                    <h3 class="font-semibold text-[#08080880]">Electricity Bill</h3>
+                    <p class="text-[#08080870] text-[12px]">Today 01:44 AM</p>
+                </div>
+            </div>
+            <div class="flex gap-5">
+                <div class="flex items-center bg-white pt-[13px] pb-[13px] pl-[16px] gap-5 rounded-[12px] border-2 border-[#08080810]">
+                <div class="bg-[#08080810] rounded-full p-[10px]"><img src="assets/wallet1.png" alt="" class="h-[23.5px] w-[23.5px]"></div>                
+                <div>
+                    <h3 class="font-semibold text-[#08080880]">Electricity Bill</h3>
+                    <p class="text-[#08080870] text-[12px]">Today 01:44 AM</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center bg-white pt-[13px] pb-[13px] pl-[16px] gap-5 rounded-[12px] border-2 border-[#08080810]">
+                <div class="bg-[#08080810] rounded-full p-[10px]"><img src="assets/wallet1.png" alt="" class="h-[23.5px] w-[23.5px]"></div>                
+                <div>
+                    <h3 class="font-semibold text-[#08080880]">Electricity Bill</h3>
+                    <p class="text-[#08080870] text-[12px]">Today 01:44 AM</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center bg-white pt-[13px] pb-[13px] pl-[16px] gap-5 rounded-[12px] border-2 border-[#08080810]">
+                <div class="bg-[#08080810] rounded-full p-[10px]"><img src="assets/wallet1.png" alt="" class="h-[23.5px] w-[23.5px]"></div>                
+                <div>
+                    <h3 class="font-semibold text-[#08080880]">Electricity Bill</h3>
+                    <p class="text-[#08080870] text-[12px]">Today 01:44 AM</p>
+                </div>
+            </div>
+           </div>
+
+
         </div>
    </div>
    <script src="Script/home.js"></script>
