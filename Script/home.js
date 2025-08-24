@@ -1,3 +1,5 @@
+const pinNumber = 1234;
+
 document.getElementById('add-money-btn').addEventListener('click', function(e){
     e.preventDefault()
     const selectedBank = document.getElementById('select-bank').value;
@@ -6,7 +8,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
     const addPin = parseInt(document.getElementById('add-pin').value);
     const availableBalance = parseInt(document.getElementById('available-balance').innerText)
     const newBalance = availableBalance + addAmount;
-    const pinNumber = 1234;
+    
   
     if(accountNumber.length < 11){
         alert('Invalid Account Number')
@@ -20,6 +22,18 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
     document.getElementById('available-balance').innerText = newBalance;
     
 })
+document.getElementById('cashout-money-btn').addEventListener('click', function(e){
+    e.preventDefault()
+    const agentNumber = document.getElementById('acc-number').value
+    const cashOutAmount = parseInt(document.getElementById('Cashout-amount').value)
+    const cashoutPin = parseInt(document.getElementById('cashout-pin').value)
+    const availableBalance = parseInt(document.getElementById('available-balance').innerText)
+    
+    const newBalance = availableBalance - cashOutAmount;
+    document.getElementById('available-balance').innerText = newBalance
+})
+
+
 
 // toggling
     document.getElementById('add-form').style.display ='none'
