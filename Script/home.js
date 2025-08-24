@@ -22,7 +22,64 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
 })
 
 // toggling
-document.getElementById('add-form').addEventListener('click', function(){
-    document.getElementById('add-form').style.display = 'block'
+    document.getElementById('add-form').style.display ='none'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'
+// Add Money
+document.getElementById('add-btn').addEventListener('click', function(){
+    document.getElementById('add-form').style.display ='block'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'   
+})
+// Cashout
+document.getElementById('cashout-btn').addEventListener('click', function(){
+    document.getElementById('Cashout-form').style.display ='block'
+    document.getElementById('add-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'
 
+})
+// Transfer Money
+document.getElementById('transfer-btn').addEventListener('click', function(){
+    document.getElementById('transfer-form').style.display ='block'
+    document.getElementById('add-form').style.display ='none'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'
+})
+// Get Bonous
+document.getElementById('get-bonous-btn').addEventListener('click', function(){
+    document.getElementById('bonous-form').style.display ='block'
+    document.getElementById('add-form').style.display ='none'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'
+})
+// Pay Bill
+document.getElementById('PayBill-btn').addEventListener('click', function(){
+    document.getElementById('bill-form').style.display ='block'    
+    document.getElementById('add-form').style.display ='none'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('history-form').style.display ='none'
+})
+// Transactions History
+document.getElementById('transactions-btn').addEventListener('click', function(){
+    document.getElementById('history-form').style.display ='block'
+     document.getElementById('add-form').style.display ='none'
+    document.getElementById('Cashout-form').style.display ='none'
+    document.getElementById('transfer-form').style.display ='none'
+    document.getElementById('bonous-form').style.display ='none'
+    document.getElementById('bill-form').style.display ='none'
 })
